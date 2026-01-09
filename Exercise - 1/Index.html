@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ParkEase | Smart Parking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">🚘 ParkEase</div>
+    <ul>
+        <li><a href="#" onclick="showHome()">Home</a></li>
+        <li><a href="#" onclick="login()">Login</a></li>
+        <li><a href="#" onclick="login()" class="nav-btn">Register</a></li>
+    </ul>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="hero fade-in">
+    <h1>Online Parking System</h1>
+    <p class="tagline">Smart • Fast • Stress-Free Parking</p>
+
+    <div class="buttons">
+        <button class="primary-btn" onclick="showSlots()">Book Now</button>
+        <button class="secondary-btn" onclick="showSlots()">Easy Booking</button>
+    </div>
+
+    <div id="login-status" class="status-box"></div>
+</section>
+
+<!-- SLOTS -->
+<section id="slots" class="hidden fade-in">
+    <h2>📍 Parking Slots Near You</h2>
+
+    <div class="slots">
+        <div class="slot available pulse" onclick="bookSlot(this)">A1</div>
+        <div class="slot available pulse" onclick="bookSlot(this)">A2</div>
+        <div class="slot available pulse" onclick="bookSlot(this)">B1</div>
+        <div class="slot available pulse" onclick="bookSlot(this)">B2</div>
+        <div class="slot available pulse" onclick="bookSlot(this)">C1</div>
+    </div>
+
+    <div id="booking-status" class="status-box"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
